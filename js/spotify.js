@@ -12,14 +12,18 @@ function submitInput(event) {
   event.preventDefault();
   console.log("clicked");
 
-  var input = [];
+  var inputs = [];
 
 //push vales from input window into input array
-  input.push(inputWindow);
+  // input.push(inputWindow);
 
 // request info from spotify using ajax
 
-  var request = ajaxRequest('GET', 'https://api.spotify.com/v1/search?q=blur&type=' + getArtistInput);
+  var request = ajaxRequest('GET', 'https://api.spotify.com/v1/search?q=blur&type=album');
+
+  // use input from window to append to url in ajax to return values, store these in inputs variable array.
+
+  // iterate through this array with for loop to find info that we want. append this info to inner html in page
 
   }
 
